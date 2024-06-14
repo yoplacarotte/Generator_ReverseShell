@@ -12,7 +12,7 @@ class bcolors:
     UNDERLINE = '\033[4m'
 
 
-shellcode = input("Insert shellcode here")
+shellcode = input("Insert shellcode here : ")
 if "\\x00" in shellcode:
     print(bcolors.FAIL + "NULL BYTE DETECTED" + bcolors.ENDC)
 else :
